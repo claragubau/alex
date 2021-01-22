@@ -1,0 +1,87 @@
+html {
+  height: 100%;
+  width: 100%;
+}
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0 0 0 0;
+  max-height: fit-content;
+  overflow: hidden;
+}
+
+.index-background {
+  height: 100%;
+  width: 100%;
+  background-image: url("images/bwportraits_cover-1500x1000.jpeg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -5;
+  top: 0;
+  position: absolute;
+}
+
+.index-name {
+  text-align: center;
+  font-size: 3.25vw;
+  color: white;
+  bottom: 10%;
+  left: 0;
+  right: 0;
+  position: absolute;
+}
+
+.index-logo {
+  position: absolute;
+  top: 15%;
+  left: 15%;
+}
+
+fieldset {
+  position: fixed;
+  height: 80vh;
+  width: auto;
+
+  top: 10%;
+  bottom: 7%;
+  left: 10%;
+  right: 10%;
+
+  border-style: solid;
+  border-color: white;
+
+  opacity: 0.8;
+  z-index: -5;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+  position: relative;
+}
+
+.topnav #myLinks {
+  display: none;
+}
+
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.active {
+  background-color: #4caf50;
+  color: white;
+}
