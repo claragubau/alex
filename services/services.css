@@ -1,0 +1,28 @@
+.services-background{
+    height: 100%;
+    width: 100%;
+    background-image: url("images/service_portada.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    z-index: -5;
+    top: 0;
+    position: absolute;
+}
+
+.services-central{
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 50%;
+    width: 75%;
+    font-size: 2.5vw;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 12.5%;
+}
+.services-central p{
+    padding: 2.5%;
+}
