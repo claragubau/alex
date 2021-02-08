@@ -13,6 +13,10 @@
   align-items: center;
   justify-content: space-around;
 }
+.contact-send{
+  display: flex;
+  flex-direction: column;
+}
 
 .contact-lateral-img {
   height: auto;
