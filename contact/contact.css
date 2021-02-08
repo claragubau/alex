@@ -9,24 +9,79 @@
 
 .contact-central {
   display: flex;
-  flex-direction: row;
-  align-items: center;
   justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
 }
-.contact-send{
+.contact-form {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
+}
+.contact-names{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.contact-name {
+  background-color: transparent;
+  color: black;
+  box-sizing: border-box;
+  border: 3px solid white;
+  padding: 8px;
+  font-size: 1.5vw;
+  margin: 5px;
+}
+.contact-surname {
+  background-color: transparent;
+  color: black;
+  box-sizing: border-box;
+  border: 3px solid white;
+  padding: 8px;
+  font-size: 1.5vw;
+  margin: 5px;
+}
+.contact-surname {
+  background-color: transparent;
+  color: black;
+  box-sizing: border-box;
+  border: 3px solid white;
+  padding: 8px;
+  font-size: 1.5vw;
+  margin: 5px;
+}
+.contact-mail {
+  background-color: transparent;
+  color: black;
+  box-sizing: border-box;
+  border: 3px solid white;
+  padding: 8px;
+  font-size: 1.5vw;
+  display: block;
+  margin: 5px;
+  width: 100%;
 }
 
-.contact-form{
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+.contact-message {
+  background-color: transparent;
+  color: black;
+  box-sizing: border-box;
+  border: 3px solid white;
+  padding: 8px;
+  font-size: 1.5vw;
+  margin: 5px;
+  width: 100%;
+}
+
+.contact-button{
+  width: 15vw;
+  
 }
 
 .contact-lateral-img {
   height: auto;
   width: 30%;
-  margin-top: 7%;
+  display: block;
 }
-

@@ -41,23 +41,21 @@
 
 
     <div class="contact-central">
-        <form action="https://formspree.io/f/xknpeypp" method="POST" class="contact-form">
-            <label>
-                Name
-                <input id="grid-first-name" type="text" name="name" placeholder="Jane">
-            </label>
-            <label>
-                Your email:
-                <input type="email" name="_replyto" placeholder="youremail@email.com">
-            </label>
-            <label>
-                Your message:
-                <textarea name="message" rows="6" placeholder="Your message goes here"></textarea>
-            </label>
-
-            <!-- your other form fields go here -->
-
-            <button type="submit">Send</button>
+        <form action="https://formspree.io/f/xknpeypp" method="POST">
+            <div class="contact-form">
+                <div class="contact-names">
+                    <label><input class="contact-name" type="text" name="name" placeholder="NAME"></label>
+                    <label><input class="contact-surname" type="text" name="surname" placeholder="SURNAME"></label>
+                </div>
+                <br>
+                <label><input class="contact-mail" type="email" name="_replyto"
+                        placeholder="youremail@email.com"></label>
+                <br>
+                <label>
+                    <textarea name="message" rows="6" placeholder="Your message goes here" class="contact-message"
+                        type="text"></textarea></label>
+                <button type="submit" class="contact-button">Send</button>
+            </div>
         </form>
         <img src="images/contact_latera.jpeg" class="contact-lateral-img" alt="contact lateral image">
     </div>
