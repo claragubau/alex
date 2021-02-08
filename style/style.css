@@ -7,9 +7,11 @@ body {
   height: 100%;
   width: 100%;
   margin: 0 0 0 0;
-  max-height: fit-content;
-  overflow: hidden;
+  min-height: 100%;
+  /* max-height: min-content; */
+  /* overflow: hidden; */
   font-family: sans-serif;
+  position: absolute;
 }
 
 .index-background {
@@ -30,7 +32,7 @@ body {
   color: white;
   bottom: 2.5%;
   right: 2.5%;
-  position: absolute;
+  position: fixed;
 }
 .index-contact a{
   text-decoration: none;
@@ -39,7 +41,7 @@ body {
 }
 
 .index-logo {
-  position: absolute;
+  position: fixed;
   top: 4%;
   left: 10%;
   height: 12%;
