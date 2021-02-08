@@ -16,36 +16,53 @@
 </head>
 
 <body>
-    <div class="topnav">
-        <a href="#home" class="active">Logo</a>
-        <div id="myLinks">
-            <a href="services/">SERVICES</a>
-            <a href="artists/">LIVE</a>
-            <a href="gallery/">GALLERY</a>
-            <a href="contact/">CONTACT</a>
-        </div>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-        </a>
+    <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
+    <label for="openSidebarMenu" class="sidebarIconToggle">
+        <div class="spinner diagonal part-1"></div>
+        <div class="spinner horizontal"></div>
+        <div class="spinner diagonal part-2"></div>
+    </label>
+    <div id="sidebarMenu">
+        <ul class="sidebarMenuInner">
+            <li> <a href="">HOME</a></li>
+            <li><a href="services/" >SERVICES</a></li>
+            <li><a href="live/">LIVE</a></li>
+            <li><a href="spaces/">SPACES </a></li>
+            <li><a href="contact/">CONTACT</a></li>
+        </ul>
     </div>
+    <img src="style/images/logo_prov.jpg" alt="logo alex martinez" class="index-logo">
     <div class="index-name">
         Alex Martinez <br>
         Sound <br>
         Freelancer
     </div>
-    <img class="index-logo" src="style/images/download.jpeg" alt="logo alex martinez">
     <div class="index-background"></div>
-    <fieldset></fieldset>
 
     <script>
-        function myFunction() {
-            var x = document.getElementById("myLinks");
-            if (x.style.display === "block") {
-                x.style.display = "none";
-            } else {
-                x.style.display = "block";
-            }
+        var toggles = document.querySelectorAll(".c-hamburger");
+
+        for (var i = toggles.length - 1; i >= 0; i--) {
+            var toggle = toggles[i];
+            toggleHandler(toggle);
+        };
+
+        function toggleHandler(toggle) {
+            toggle.addEventListener("click", function (e) {
+                e.preventDefault();
+                if (this.classList.contains("is-active") === true) {
+                    this.classList.remove("is-active");
+                    $('.open').removeClass('oppenned');
+                } else {
+                    this.classList.add("is-active");
+                    $(".open").addClass('oppenned');
+                }
+            });
         }
+        $(".sub-menu li a").click(function (event) {
+            $(".open").removeClass('oppenned');
+            $(".c-hamburger").removeClass('is-active');
+        });
     </script>
 </body>
 
