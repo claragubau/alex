@@ -1,32 +1,43 @@
-.services-background{
-    height: 100%;
-    width: 100%;
-    background-image: url("images/service_portada.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    z-index: -5;
-    top: 0;
-    position: absolute;
+.services-background {
+  height: 100%;
+  width: 100%;
+  background-image: url("images/service_portada.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  z-index: -5;
+  top: 0;
+  position: absolute;
 }
 
-.services-central{
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 70%;
-    width: 100%;
-    font-size: 1.5vw;
-    margin-top: 10%;
+.services-central {
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  font-size: 3vh;
 }
-.services-row{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
+@media screen and (max-width: 600px) {
+  .services-central {
+      font-size: 2vh;
+  }
 }
-.services-central p{
-    margin: 4.5%;
+.services-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.services-central p {
+  margin: 4%;
+}
+
+@media screen and (max-width: 600px) {
+    .services-central p{
+        margin: 6%;
+    }
 }
