@@ -73,11 +73,7 @@ body {
   z-index: 1;
 }
 .sidebarMenuInner{
-<<<<<<< HEAD
-  padding-inline-start: 0;
-=======
   padding-inline-start: 0%;
->>>>>>> dd6a8b7b5836b6a8eeed74e22e4451a254a75348
 }
 
 .sidebarMenuInner li {

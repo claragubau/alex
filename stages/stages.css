@@ -20,14 +20,25 @@
     color: white;
     display: flex;
     height: 85%;
-    font-size: 1.5vw;
+    font-size: 1vw;
     margin-left: 5%;
     text-align: justify;
     align-items: center;
     margin-top: 6%;
 }
+@media screen and (max-width: 600px) {
+    .stages-text{
+        font-size: 2.5vw;
+    }
+}
 
 .stages-img{
     height: 100%;
     width: 49%;
+}
+@media screen and (max-width: 600px) {
+    .stages-img{
+        height: 65%;
+        margin-right: 5px;
+    }
 }
