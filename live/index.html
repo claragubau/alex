@@ -12,10 +12,28 @@
     <meta name="author" content="Clara Gubau">
     <link rel="stylesheet" href="../style/style.css" type="text/css">
     <link rel="stylesheet" href="live.css" type="text/css">
+    <link rel="apple-touch-icon" sizes="57x57" href="../favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 
 </head>
 
 <body>
+    <!-- COMMON PART OF THE PAGE -->
     <input type="checkbox" class="openSidebarMenu" id="openSidebarMenu">
     <label for="openSidebarMenu" class="sidebarIconToggle">
         <div class="spinner diagonal part-1"></div>
@@ -35,10 +53,17 @@
         <img src="../style/images/logo_prov.jpg" alt="logo alex martinez" class="index-logo">
     </a>
     <div class="index-contact">
-        <a href="../contact/">alexmartinezsound.com</a>
+        <a href="../contact/">
+            <img src="../style/images/c.png" alt="c img" class="c-image">
+            alexmartinezsound.com</a>
     </div>
     <div class="live-background"></div>
-    <div class="live-row">
+
+
+
+    <!-- GALLERY PART -->
+
+    <!-- <div class="live-row">
         <div class="live-col">
             <img src="images/1.jpg" alt="first image grid alex">
             <img src="images/2.jpg" alt="first image grid alex">
@@ -56,7 +81,94 @@
             <img src="images/8.jpg" alt="first image grid alex">
             <img src="images/9.jpg" alt="first image grid alex">
         </div>
+    </div> -->
+
+    <div class="live-row">
+        <div class="live-column">
+            <img src="images/1.jpg" onclick="openModal();currentSlide(1)" class="hover-shadow">
+            <img src="images/2.jpg" onclick="openModal();currentSlide(2)" class="hover-shadow">
+            <img src="images/3.jpg" onclick="openModal();currentSlide(3)" class="hover-shadow">
+        </div>
+        <div class="live-column">
+            <img src="images/4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+        </div>
+        <div class="live-column">
+            <img src="images/4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+        </div>
+        <div class="live-column">
+            <img src="images/4.jpg" onclick="openModal();currentSlide(4)" class="hover-shadow">
+        </div>
     </div>
 
+    <div id="myModal" class="modal">
+        <span class="close cursor" onclick="closeModal()">&times;</span>
+        <div class="modal-content">
+
+            <div class="mySlides">
+                <div class="numbertext">1 / 4</div>
+                <img src="images/1.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">2 / 4</div>
+                <img src="images/2.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">3 / 4</div>
+                <img src="images/3.jpg" style="width:100%">
+            </div>
+
+            <div class="mySlides">
+                <div class="numbertext">4 / 4</div>
+                <img src="images/4.jpg" style="width:100%">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+    </div>
+    <script>
+        // Open the Modal
+        function openModal() {
+            document.getElementById("myModal").style.display = "block";
+        }
+
+        // Close the Modal
+        function closeModal() {
+            document.getElementById("myModal").style.display = "none";
+        }
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>
 
 </body>

@@ -23,7 +23,7 @@ body {
 .index-background {
   height: 100%;
   width: 100%;
-  background-image: url("images/portada.jpg");
+  background-image: url("images/portada.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -52,6 +52,12 @@ body {
   left: 10%;
   height: 12%;
   width: auto;
+}
+
+.c-image{
+  height: 15px;
+  width: 15px;
+
 }
 
 .mainInner div {
