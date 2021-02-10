@@ -72,6 +72,9 @@ body {
   background: black;
   z-index: 1;
 }
+.sidebarMenuInner{
+  padding-inline-start: 0%;
+}
 
 .sidebarMenuInner li {
   list-style: none;
