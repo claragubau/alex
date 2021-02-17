@@ -1,5 +1,5 @@
 .contact-background {
-  height: 125%;
+  height: 100vh;
   width: 100%;
   background-color: black;
   z-index: -5;
@@ -17,6 +17,9 @@
   background-color: black;
 }
 @media screen and (max-width: 600px) {
+  .contact-background{
+    height: 125vh;
+  }
   .contact-central {
     flex-direction: column;
     align-items: center;
@@ -32,7 +35,8 @@
 
 @media screen and (max-width: 600px) {
   .contact-form {
-    margin-top: 80%;
+    margin-top: 45vh;
+    width: 95%;
   }
 }
 .contact-names {
@@ -41,8 +45,9 @@
   justify-content: space-between;
 }
 
-.prova{
-  width: 100%;
+@media screen and (max-width: 600px) {
+  .contact-names{
+  }
 }
 
 .contact-name-box {
@@ -82,8 +87,13 @@
   width: 15%;
   margin: 5px;
   padding: 5px;
+  color: black;
 }
-
+.contact-info-img{
+  width: 25px;
+  height: auto;
+  margin: 2px;
+}
 .contact-lateral-img {
   height: auto;
   width: 30%;
@@ -103,5 +113,6 @@
   color: white;
   text-decoration: none;
   display: flex;
+  width: fit-content;
   align-items: center;
 }

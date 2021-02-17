@@ -42,3 +42,10 @@
         margin-right: 5px;
     }
 }
+i.far{
+    border: 1px solid white;
+}
+
+.fa-copyright{
+    color: white;
+}
