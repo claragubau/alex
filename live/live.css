@@ -32,6 +32,7 @@
     vertical-align: middle;
     width: 100%;
     height: auto;
+    cursor: pointer;
 } 
 
 .modal {
@@ -135,21 +136,4 @@
   background-color: black;
   padding: 2px 16px;
   color: white;
-}
-
-img.demo {
-  opacity: 0.6;
-}
-
-.active,
-.demo:hover {
-  opacity: 1;
-}
-
-img.hover-shadow {
-  transition: 0.3s;
-}
-
-.hover-shadow:hover {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }

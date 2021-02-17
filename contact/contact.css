@@ -31,11 +31,12 @@
   flex-direction: column;
   justify-content: space-between;
   width: 125%;
+  font-family: Audiowide;
 }
 
 @media screen and (max-width: 600px) {
   .contact-form {
-    margin-top: 45vh;
+    margin-top: 60vh;
     width: 95%;
   }
 }
@@ -51,9 +52,10 @@
   box-sizing: border-box;
   border: 3px solid white;
   padding: 8px;
-  font-size: 1vw;
+  font-size: 1.2vw;
   margin: 2%;
   color: white;
+  font-family: Audiowide;
 }
 @media screen and (max-width: 600px) {
   .contact-names{
@@ -61,6 +63,7 @@
   }
   .contact-name-box{
     width: 100%;
+    font-size: 3vw;
   }
 }
 
@@ -70,9 +73,10 @@
   box-sizing: border-box;
   border: 3px solid white;
   padding: 8px;
-  font-size: 1vw;
+  font-size: 1.2vw;
   margin: 5px;
   width: 100%;
+  font-family: Audiowide;
 }
 
 .contact-message {
@@ -81,18 +85,37 @@
   box-sizing: border-box;
   border: 3px solid white;
   padding: 8px;
-  font-size: 1vw;
+  font-size: 1.2vw;
   margin: 5px;
   width: 100%;
-  font-family: sans-serif;
+  font-family: Audiowide;
 }
 
+@media screen and (max-width: 600px) {
+  .contact-mail{
+    font-size: 3vw;
+  }
+  .contact-message{
+    font-size: 3vw;
+  }
+}
 .contact-button {
-  width: 15%;
+  width: 25%;
   margin: 5px;
   padding: 5px;
   color: black;
+  background-color: white;
+  margin-left: auto;
+  margin-right: auto;
+  font-family: Audiowide;
 }
+
+@media screen and (max-width: 600px) {
+  .contact-button{
+    padding: 2px;
+  }
+}
+
 .contact-info-img{
   width: 25px;
   height: auto;
