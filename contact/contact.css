@@ -100,7 +100,7 @@
   }
 }
 .contact-button {
-  width: 25%;
+  width: 35%;
   margin: 5px;
   padding: 5px;
   color: black;
@@ -108,6 +108,7 @@
   margin-left: auto;
   margin-right: auto;
   font-family: Audiowide;
+  font-size: 1.25vw;
 }
 
 @media screen and (max-width: 600px) {
