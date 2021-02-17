@@ -8,12 +8,18 @@
 }
 
 .live-row{
-    margin-top: 7.5%;
+    margin-top: 8%;
     justify-content: center;
     display:flex;
     flex-wrap: wrap;
     padding: 0 4px;
 }
+@media screen and (max-width: 600px) {
+  .live-row{
+    margin-top: 25%;
+  }
+}
+
 
 .live-col{
     flex: 25%;

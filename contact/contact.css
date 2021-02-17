@@ -55,6 +55,14 @@
   margin: 2%;
   color: white;
 }
+@media screen and (max-width: 600px) {
+  .contact-names{
+    justify-content: center;
+  }
+  .contact-name-box{
+    width: 100%;
+  }
+}
 
 .contact-mail {
   background-color: transparent;
