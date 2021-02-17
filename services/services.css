@@ -22,7 +22,7 @@
 }
 @media screen and (max-width: 600px) {
   .services-central {
-      font-size: 2vh;
+    font-size: 2vh;
   }
 }
 .services-row {
@@ -37,7 +37,7 @@
 }
 
 @media screen and (max-width: 600px) {
-    .services-central p{
-        margin: 6%;
-    }
+  .services-central p {
+    margin: 6%;
+  }
 }

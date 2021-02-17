@@ -17,7 +17,7 @@
   background-color: black;
 }
 @media screen and (max-width: 600px) {
-  .contact-background{
+  .contact-background {
     height: 125vh;
   }
   .contact-central {
@@ -58,10 +58,10 @@
   font-family: Audiowide;
 }
 @media screen and (max-width: 600px) {
-  .contact-names{
+  .contact-names {
     justify-content: center;
   }
-  .contact-name-box{
+  .contact-name-box {
     width: 100%;
     font-size: 3vw;
   }
@@ -92,10 +92,10 @@
 }
 
 @media screen and (max-width: 600px) {
-  .contact-mail{
+  .contact-mail {
     font-size: 3vw;
   }
-  .contact-message{
+  .contact-message {
     font-size: 3vw;
   }
 }
@@ -111,12 +111,12 @@
 }
 
 @media screen and (max-width: 600px) {
-  .contact-button{
+  .contact-button {
     padding: 2px;
   }
 }
 
-.contact-info-img{
+.contact-info-img {
   width: 25px;
   height: auto;
   margin: 2px;
@@ -142,8 +142,4 @@
   display: flex;
   width: fit-content;
   align-items: center;
-}
-
-.contact-ig-logo{
-  color: white;
 }
