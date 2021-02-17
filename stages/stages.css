@@ -14,13 +14,16 @@
     align-items: center;
     justify-content: space-between;
 }
+.stages-img{
+    width: auto;
+}
 
 .stages-text{
     width: 40%;
     color: white;
     display: flex;
     height: 85%;
-    font-size: 1.5vw;
+    font-size: 1.2vw;
     margin-left: 5%;
     text-align: justify;
     align-items: center;
@@ -41,11 +44,4 @@
         height: 65%;
         margin-right: 5px;
     }
-}
-i.far{
-    border: 1px solid white;
-}
-
-.fa-copyright{
-    color: white;
 }

@@ -2,6 +2,7 @@ html {
   height: 100%;
   width: 100%;
   font-family: AudioWide, sans-serif;
+  background-color: black;
 }
 body {
   height: 100%;
@@ -34,7 +35,7 @@ body {
 
 .index-contact {
   text-align: right;
-  font-size: 1.5vw;
+  font-size: 1.15vw;
   color: white;
   bottom: 2%;
   right: 2%;
@@ -53,10 +54,10 @@ body {
   height: 12%;
   width: auto;
 }
-
-.c-image{
-  height: 15px;
-  width: 15px;
+@media screen and (max-width: 600px) {
+  .index-logo{
+    height: 7.5%;
+  }
 }
 
 .mainInner div {
