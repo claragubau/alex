@@ -46,10 +46,10 @@ body {
 }
 @media screen and (max-width: 600px) {
   .index-contact {
-    font-size: 2.5vw;
+    font-size: 2.75vw;
   }
   .index-copyright {
-    font-size: 2.5vw;
+    font-size: 2.75vw;
   }
 }
 .index-contact a {
@@ -67,7 +67,8 @@ body {
 }
 @media screen and (max-width: 600px) {
   .index-logo {
-    height: 4%;
+    height: 5%;
+    left: 5%;
   }
 }
 

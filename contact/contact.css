@@ -114,6 +114,7 @@
 @media screen and (max-width: 600px) {
   .contact-button {
     padding: 2px;
+    font-size: 3.5vw;
   }
 }
 
